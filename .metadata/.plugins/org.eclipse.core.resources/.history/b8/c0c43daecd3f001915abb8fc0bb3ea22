@@ -1,0 +1,13 @@
+package com.hotelooka;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class HotelookaApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HotelookaApplication.class, args);
+	}
+
+}

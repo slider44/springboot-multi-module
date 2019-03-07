@@ -1,0 +1,65 @@
+package org.hotelooka.domain;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+import org.hibernate.annotations.Type;
+
+@Entity
+public class Hotel {
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
+	private long id;
+	private String name;
+	private int classification;
+	
+//	@Column(columnDefinition = "TINYINT")
+//	@Type(type = "org.hibernate.type.NumericBooleanType")
+	private Integer isOpen;
+	
+	protected Hotel() {
+		
+	}
+	
+	public Hotel(String name, int classification, Integer isOpen) {
+		this.name = name;
+		this.classification = classification;
+		this.isOpen = isOpen;
+		
+	}
+	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getClassification() {
+		return classification;
+	}
+
+	public void setClassification(int classification) {
+		this.classification = classification;
+	}
+
+	public Integer isOpen() {
+		return isOpen;
+	}
+
+	public void setOpen(Integer isOpen) {
+		this.isOpen = isOpen;
+	}
+}
