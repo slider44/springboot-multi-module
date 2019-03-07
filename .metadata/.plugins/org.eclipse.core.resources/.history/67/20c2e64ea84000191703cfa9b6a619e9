@@ -1,0 +1,48 @@
+-- -----------------------------------------------------
+-- Schema hotelooka
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `hotelooka` ;
+
+-- -----------------------------------------------------
+-- Schema hotelooka
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `hotelooka` ;
+USE `hotelooka` ;
+
+
+-- -----------------------------------------------------
+-- Table `hotelooka`.`hotel`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `hotelooka`.`hotel` ;
+
+CREATE TABLE IF NOT EXISTS `hotelooka`.`hotel` (
+  `hotel_id` TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `hotel_name` VARCHAR(25) NOT NULL,
+  `classification` INTEGER NOT NULL,
+  isOpen TINYINT(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`hotel_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `hotelooka`.`hotel`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `hotelooka`.`hotel` ;
+
+CREATE TABLE IF NOT EXISTS `hotelooka`.`hotel` (
+  `hotel_id` TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `hotel_name` VARCHAR(25) NOT NULL,
+  `classification` INTEGER NOT NULL,
+  isOpen TINYINT(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`hotel_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+CREATE TABLE IF NOT EXISTS hotel_booking (
+  booking_id int(11) unsigned NOT NULL AUTO_INCREMENT,
+  hotel_id int(11) unsigned NOT NULL,
+  price_per_night decimal NOT NULL,
+  PRIMARY KEY (booking_id),
+  FOREIGN KEY (hotel_id) REFERENCES hotel(hotel_id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

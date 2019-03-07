@@ -1,0 +1,19 @@
+package org.hotelooka.web;
+
+import java.util.List;
+
+import org.hotelooka.domain.HotelBooking;
+import org.hotelooka.service.HotelService;
+import org.hotelooka.service.booking.HotelBookingService;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BookingController {
+
+	HotelBookingService hotelBookingService;
+	
+	public List<HotelBooking> getAllBookings() {
+		
+		return hotelService.getAllHotels();
+	}
+}

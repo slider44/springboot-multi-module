@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS hotel (
+    hotel_id INTEGER NOT NULL AUTO_INCREMENT,
+    hotel_name VARCHAR(128) NOT NULL,
+    classification INTEGER NOT NULL,
+    isOpen tinyint(1) NOT NULL DEFAULT '1',
+    PRIMARY KEY (hotel_id)
+);
+
+

@@ -1,0 +1,10 @@
+package org.hotelooka.service.booking;
+
+import org.hotelooka.domain.HotelBooking;
+import org.springframework.stereotype.Service;
+
+
+public interface BookingService {
+	
+	HotelBooking createBooking (HotelBooking hotelBooking);
+}

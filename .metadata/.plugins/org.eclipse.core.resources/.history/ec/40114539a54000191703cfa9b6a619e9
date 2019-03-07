@@ -1,0 +1,2 @@
+INSERT INTO Hotel (name, classification, isOpen) VALUES ('Shangri-la', 5, true);
+

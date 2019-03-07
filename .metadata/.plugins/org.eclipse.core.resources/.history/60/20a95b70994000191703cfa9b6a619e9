@@ -1,0 +1,19 @@
+package org.hotelooka.domain;
+
+import javax.persistence.Entity;
+
+@Entity
+public class HotelBooking {
+	private String hotelName;
+	private double pricePerNight;
+	private int nbOfNights;
+	
+	public HotelBooking(String hotelName, double pricePerNight, int nbOfNights) {
+		super();
+		this.hotelName = hotelName;
+		this.pricePerNight = pricePerNight;
+		this.nbOfNights = nbOfNights;
+	}
+	
+	
+}

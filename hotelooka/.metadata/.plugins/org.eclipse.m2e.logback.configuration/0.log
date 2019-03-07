@@ -71,3 +71,7 @@
 2019-03-07 09:43:05,673 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
 2019-03-07 09:43:05,675 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-03-07 09:43:05,675 [Worker-4: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\SPRINGBOOT\hotelooka\hotelooka.web\src\test\resources
+2019-03-07 11:39:09,634 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-03-07 11:39:20,820 [Worker-0: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/hotelooka.persistence: com:hotelooka.persistence:0.0.1-SNAPSHOT with classifier  to /hotelooka.persistence/target/classes
+2019-03-07 11:39:20,824 [Worker-0: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/hotelooka.domain: com:hotelooka.domain:0.0.1-SNAPSHOT with classifier  to /hotelooka.domain/target/classes
+2019-03-07 11:39:20,825 [Worker-0: reload maven project] INFO  o.e.m.c.i.p.WorkspaceClassifierResolverManager - Resolving P/hotelooka.service: com:hotelooka.service:0.0.1-SNAPSHOT with classifier  to /hotelooka.service/target/classes

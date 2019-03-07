@@ -1,0 +1,8 @@
+package org.hotelooka.domain;
+
+import javax.persistence.Entity;
+
+@Entity
+public class HotelBooking {
+	private String hotelName;
+}

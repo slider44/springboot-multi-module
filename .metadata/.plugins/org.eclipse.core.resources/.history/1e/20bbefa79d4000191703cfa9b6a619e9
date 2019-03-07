@@ -1,0 +1,62 @@
+package org.hotelooka.service.booking;
+
+import java.util.List;
+
+import org.hotelooka.domain.Hotel;
+import org.hotelooka.service.HotelService;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+@Service
+public class HotelBookingImp implements HotelService {
+
+	
+	@Override
+	public Hotel createHotel(Hotel hotel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Hotel getHotel(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Hotel editHotel(Hotel hotel) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteHotel(Hotel hotel) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public ResponseEntity<?> deleteHotel(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Hotel> getAllHotels(int pageNumber, int pageSize) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Hotel> getAllHotels() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public long countCustomer() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

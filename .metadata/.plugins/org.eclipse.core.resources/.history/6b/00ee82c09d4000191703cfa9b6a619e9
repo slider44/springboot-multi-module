@@ -1,0 +1,20 @@
+package org.hotelooka.service.booking;
+
+import java.util.List;
+
+import org.hotelooka.domain.Hotel;
+import org.hotelooka.persistence.HotelRepository;
+import org.hotelooka.service.HotelService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+
+@Service
+public class HotelBookingImp implements HotelBService {
+
+	@Autowired
+	HotelRepository hotelRepository;
+	
+	
+
+}

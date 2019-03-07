@@ -1,0 +1,5 @@
+package org.hotelooka.service.booking;
+
+public class BookingService {
+
+}

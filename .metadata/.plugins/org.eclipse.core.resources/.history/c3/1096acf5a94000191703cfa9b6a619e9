@@ -1,0 +1,30 @@
+-- -----------------------------------------------------
+-- Schema hotelooka
+-- -----------------------------------------------------
+DROP SCHEMA IF EXISTS `hotelooka` ;
+
+-- -----------------------------------------------------
+-- Schema hotelooka
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `hotelooka` ;
+USE `hotelooka` ;
+
+
+-- -----------------------------------------------------
+-- Table `hotelooka`.`hotel`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `hotelooka`.`hotel` ;
+
+CREATE TABLE IF NOT EXISTS `hotelooka`.`hotel` (
+  `hotel_id` TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `hotel_name` VARCHAR(25) NOT NULL,
+  `classification` INTEGER NOT NULL,
+  isOpen TINYINT(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`hotel_id`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+
+
+-- -----------------------------------------------------
+-- Table `hotelooka`.`hotel_booking`
+-- -----------------------------------------------------

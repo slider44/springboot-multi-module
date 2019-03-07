@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS Hotel (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    name VARCHAR(128) NOT NULL,
+    classification INTEGER NOT NULL,
+    isOpen tinyint(1) NOT NULL DEFAULT '1',
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS HotelBooking (
+    id INTEGER NOT NULL AUTO_INCREMENT,
+    name VARCHAR(128) NOT NULL,
+    classification INTEGER NOT NULL,
+    isOpen tinyint(1) NOT NULL DEFAULT '1',
+    PRIMARY KEY (id)
+);
+

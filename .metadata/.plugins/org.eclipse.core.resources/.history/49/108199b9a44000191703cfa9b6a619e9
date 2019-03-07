@@ -1,0 +1,3 @@
+INSERT INTO Hotel (name, classification, isOpen) VALUES ('Marriot', 5, true);
+
+INSERT INTO HOTEL_BOOKING (hotel_id, classification, isOpen) VALUES ('Marriot', 5, true);

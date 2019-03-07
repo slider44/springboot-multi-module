@@ -1,0 +1,5 @@
+package org.hotelooka.web;
+
+public class BookingController {
+
+}
