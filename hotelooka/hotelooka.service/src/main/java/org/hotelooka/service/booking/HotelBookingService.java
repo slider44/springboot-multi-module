@@ -15,4 +15,6 @@ public interface HotelBookingService {
 	ResponseEntity<?> deleteBooking(Long id);
 	
 	List<HotelBooking>  getAllBooking();
+	
+	List<HotelBooking> getAffordable(double price) ;
 }

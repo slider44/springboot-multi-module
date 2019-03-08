@@ -1,6 +1,7 @@
 package org.hotelooka.service.booking;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -18,10 +19,10 @@ public class HotelBookingImp implements HotelBookingService {
 
 	@Autowired
 	HotelBookingRepository hotelBookingRepository;
-	
+
 	@PersistenceContext
 	private EntityManager em;
-	
+
 	@Autowired
 	HotelRepository hotelRepository;
 
@@ -45,11 +46,17 @@ public class HotelBookingImp implements HotelBookingService {
 
 	@Override
 	public List<HotelBooking> getAllBooking() {
-		
+
 		return hotelBookingRepository.findAll();
-		
+
 	}
-	
-	
+
+	@Override
+	public List<HotelBooking> getAffordable(double price) {
+		List<HotelBooking> ht = hotelBookingRepository.findAll();
+
+		return ht.stream().filter(x -> x.getPricePerNight() <= price).collect(Collectors.toList());
+
+	}
 
 }

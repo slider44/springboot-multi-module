@@ -6,6 +6,7 @@ import org.hotelooka.domain.HotelBooking;
 import org.hotelooka.service.booking.HotelBookingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,5 +21,11 @@ public class BookingController {
 	public List<HotelBooking> getAllBookings() {
 		
 		return hotelBookingService.getAllBooking();
+	}
+	
+	@GetMapping("/affordable/{price}")
+	public List<HotelBooking> getAffordable(@PathVariable double price) {
+		
+		return hotelBookingService.getAffordable(price);
 	}
 }

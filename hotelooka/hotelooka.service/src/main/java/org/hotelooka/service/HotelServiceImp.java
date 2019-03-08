@@ -54,6 +54,8 @@ public class HotelServiceImp implements HotelService {
 	@Override
 	public List<Hotel> getAllHotels() {
 		return hotelRepository.findAll();
+		
+		
 	}
 
 	@Override
